@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      href="https://icons.iconarchive.com/icons/iconsmind/outline/128/Data-Storage-icon.png"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+        <legend>Insert Data</legend>
+
+        <div id="inputCont" class="inputCont">
+          <label for="curseName">Name : </label>
+          <input
+            type="text"
+            name="curseName"
+            id="curseName"
+            placeholder="Short Name"
+            required
+          />
+          <label for="curseVal">Price : </label>
+          <input
+            type="text"
+            name="curseVal"
+            id="curseVal"
+            placeholder="Value In EGP"
+            required
+          />
+          <label for="cursTime">Time : </label>
+          <input
+            type="text"
+            name="cursTime"
+            id="cursTime"
+            placeholder="Time With Days"
+            required
+          />
+          <button id="saveAll" class="btn" type="submit">Save</button>
+          <button id="editAll" class="btn hide" type="submit">Edit</button>
+        </div>
+      </fieldset>
+      <div id="contTaple" class="contTaple">
+        <fieldset class="data">
+          <legend>Local Data</legend>
+          <div id="showData" class="showdata"></div>
+        </fieldset>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
